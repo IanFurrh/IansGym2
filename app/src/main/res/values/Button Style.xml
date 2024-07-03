@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">#ef6c00</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="BackButton">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:text">"Home"</item>
+        <item name="android:backgroundTint">#ef6c00</item>
+    </style>
+
+
+</resources>

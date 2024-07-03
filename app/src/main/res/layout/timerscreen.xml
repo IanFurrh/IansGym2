@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerScreen">
+
+    <Button
+        style="@style/BackButton"
+        android:onClick="goBack"
+        android:text="Home"/>
+
+    <TextView
+        android:id="@+id/exerciseTitle"
+        style="@style/textStyle"
+        android:layout_width="380dp"
+        android:layout_height="73dp"
+        android:gravity="center_horizontal"
+        android:textSize="50dp"
+        android:text="Test"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/exerciseTimer"
+        style="@style/textStyle"
+        android:layout_width="382dp"
+        android:layout_height="111dp"
+        android:gravity="center_horizontal"
+        android:textSize="50dp"
+        android:text="Test"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/endString"
+        android:onClick="pauseWorkout"
+        style="@style/textStyle"
+        android:layout_width="382dp"
+        android:layout_height="111dp"
+        android:text="Pause/Play"
+        android:textSize="40dp"
+        />
+
+</LinearLayout>

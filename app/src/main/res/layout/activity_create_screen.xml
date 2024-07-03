@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".CreateScreen">
+
+    <Button
+        style="@style/BackButton"
+        android:onClick="goBack" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WorkoutNameDisplay"
+        android:layout_weight="5"
+        style="@style/textStyle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Exercise Name"
+            android:id="@+id/etExName"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Min"
+            android:id="@+id/etExMin"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Sec"
+            android:id="@+id/etExSec"/>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="btnAdd"
+            android:textSize="10dp"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/createList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:layout_marginBottom="10dp">
+
+
+        <Button
+            android:id="@+id/saveWorkout"
+            style="@style/ButtonStyle"
+            android:layout_width="170dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="saveWorkout"
+            android:text="Save and return home"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/runWorkout"
+            style="@style/ButtonStyle"
+            android:layout_width="170dp"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="runWorkout"
+            android:text="Save and run"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
